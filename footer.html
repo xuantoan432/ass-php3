@@ -1,0 +1,1785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <style>
+        :root {
+            --font-text: Roboto Condensed, sans-serif;
+            --color-brand: #51B25B;
+            --primary-color: #5897fb;
+            --color-brand-2: #3256e0;
+            --color-primary: #3f81eb;
+            --color-secondary: #41506b;
+            --color-warning: #ffb300;
+            --color-danger: #ff3551;
+            --color-success: #3ed092;
+            --color-info: #18a1b7;
+            --color-text: #4f5d77;
+            --color-heading: #222222;
+            --color-grey-1: #111111;
+            --color-grey-2: #242424;
+            --color-grey-4: #90908e;
+            --color-grey-9: #f4f5f9;
+            --color-muted: #8e8e90;
+            --color-body: #4f5d77;
+        }
+    </style>
+
+    <title>Wowy - Laravel Multipurpose eCommerce Script</title>
+    <meta name="description"
+          content="Wowy is an outstanding eCommerce Laravel script. It will be the perfect solution for your current or future web shop.">
+
+    <link rel="shortcut icon" type="image/x-icon" href="storage/general/favicon.png">
+
+
+    <link rel="stylesheet" href="themes/wowy/css/vendors/normalize.css">
+    <link rel="stylesheet" href="themes/wowy/plugins/bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="themes/wowy/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="themes/wowy/css/vendors/fontawesome-all.min.css">
+    <link rel="stylesheet" href="themes/wowy/css/vendors/wowy-font.css">
+    <link rel="stylesheet" href="themes/wowy/css/plugins/animate.css">
+    <link rel="stylesheet" href="themes/wowy/css/plugins/slick.css">
+    <link rel="stylesheet" href="max3pharma-theme/css/style.css">
+
+</head>
+
+<body>
+<header class="header-area header-height-2 ">
+    <div class="header-top header-top-ptb-1 d-none d-lg-block">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-4">
+                    <div class="header-info">
+                        <p>CÔNG TY CỔ PHẦN DƯỢC PHẨM MAX3PHARRMA</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-4">
+
+                    <div class="search-style-2">
+                        <form action="#" class="form--quick-search" data-ajax-url="#" method="get">
+                            <div class="form-group--icon">
+                                <div class="product-cat-label">Tất cả danh mục</div>
+                                <select class="product-category-select" id="product-category-select"
+                                        name="categories[]">
+                                    <option value="">Tất cả danh mục</option>
+                                    <option value="1">Hot Promotions</option>
+
+                                    <option value="2">Electronics</option>
+
+                                    <option value="3">&nbsp;&nbsp;Home Audio &amp; Theaters</option>
+
+                                    <option value="4">&nbsp;&nbsp;TV &amp; Videos</option>
+
+                                    <option value="5">&nbsp;&nbsp;Camera, Photos &amp; Videos</option>
+
+                                    <option value="6">&nbsp;&nbsp;Cellphones &amp; Accessories</option>
+
+                                    <option value="7">&nbsp;&nbsp;Headphones</option>
+
+                                    <option value="8">&nbsp;&nbsp;Videos games</option>
+
+                                    <option value="9">&nbsp;&nbsp;Wireless Speakers</option>
+
+                                    <option value="10">&nbsp;&nbsp;Office Electronic</option>
+
+                                    <option value="11">Clothing</option>
+
+                                    <option value="12">Computers</option>
+
+                                    <option value="13">&nbsp;&nbsp;Computer &amp; Tablets</option>
+
+                                    <option value="14">&nbsp;&nbsp;Laptop</option>
+
+                                    <option value="15">&nbsp;&nbsp;Monitors</option>
+
+                                    <option value="16">&nbsp;&nbsp;Computer Components</option>
+
+                                    <option value="17">Home &amp; Kitchen</option>
+
+                                    <option value="18">Health &amp; Beauty</option>
+
+                                    <option value="19">Jewelry &amp; Watch</option>
+
+                                    <option value="20">Technology Toys</option>
+
+                                    <option value="21">&nbsp;&nbsp;Drive &amp; Storages</option>
+
+                                    <option value="22">&nbsp;&nbsp;Gaming Laptop</option>
+
+                                    <option value="23">&nbsp;&nbsp;Security &amp; Protection</option>
+
+                                    <option value="24">&nbsp;&nbsp;Accessories</option>
+
+                                    <option value="25">Phones</option>
+
+                                    <option value="26">Babies &amp; Moms</option>
+
+                                    <option value="27">Sport &amp; Outdoor</option>
+
+                                    <option value="28">Books &amp; Office</option>
+
+                                    <option value="29">Cars &amp; Motorcycles</option>
+
+                                    <option value="30">Home Improvements</option>
+
+
+                                </select>
+                            </div>
+                            <input type="text" name="q" class="input-search-product" placeholder="Tìm kiếm các mục…"
+                                   autocomplete="off">
+                            <button type="submit" title="search"><i class="far fa-search search"></i></button>
+                            <div class="panel--search-result"></div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-3 col-lg-4">
+                    <div class="header-action-right">
+                        <div class="header-action-2">
+                            <div class="header-action-icon-2">
+                                <a class="mini-cart-icon" href="#">
+                                    <i class="fas fa-shopping-cart"></i>
+
+                                </a>
+                            </div>
+                            <div class="header-action-icon-2">
+                                <a href="#" class="d-flex w-100 text-white align-items-center">
+                                    <i class="fas fa-user me-3"></i>
+                                    đăng ký/đăng nhập
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="position-absolute start-100 top-0 d-flex align-items-center hot-line">
+                    <i class="fas fa-phone-alt ms-3"></i>
+                    <a href="#">
+                        Hotline CSKH
+                        <p>0869938853</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-middle header-middle-ptb-1 d-none d-lg-block mb-30">
+        <div class="container">
+            <div class="header-wrap row">
+                <div class="logo logo-width-1 col-2">
+                    <a href="#"><img src="max3pharma-theme/images/logo/Timetravel%201.png"
+                                     alt="Wowy - Laravel Multipurpose eCommerce Script"></a>
+                    <div class="header-wrap header-space-between position-relative main-nav">
+                        <div class="main-categories-wrap d-none d-lg-block">
+                            <a class="categories-button-active" href="http://max3pharma.test:8080/#">
+                                <span class="fa fa-list"></span> Duyệt danh mục <i class="down far fa-chevron-down"></i>
+                                <i
+                                    class="up far fa-chevron-up"></i>
+                            </a>
+                            <div class="categories-dropdown-wrap categories-dropdown-active-large ">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="far fa-star"></i>
+                                            Hot Promotions
+                                        </a>
+
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#">
+                                            <i class="wowy-font-cpu"></i>
+                                            Electronics
+                                        </a>
+
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Home
+                                                        Audio &amp; Theaters</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">TV
+                                                        &amp;
+                                                        Videos</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Camera,
+                                                        Photos &amp; Videos</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Cellphones
+                                                        &amp; Accessories</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Headphones</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Videos
+                                                        games</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Wireless
+                                                        Speakers</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Office
+                                                        Electronic</a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="wowy-font-tshirt"></i>
+                                            Clothing
+                                        </a>
+
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#">
+                                            <i class="wowy-font-desktop"></i>
+                                            Computers
+                                        </a>
+
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Computer
+                                                        &amp; Tablets</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Laptop</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Monitors</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Computer
+                                                        Components</a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="wowy-font-home"></i>
+                                            Home &amp; Kitchen
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="wowy-font-dress"></i>
+                                            Health &amp; Beauty
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="wowy-font-diamond"></i>
+                                            Jewelry &amp; Watch
+                                        </a>
+
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#">
+                                            <i class="far fa-microchip"></i>
+                                            Technology Toys
+                                        </a>
+
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Drive
+                                                        &amp; Storages</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Gaming
+                                                        Laptop</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Security
+                                                        &amp; Protection</a>
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item nav-link nav_item"
+                                                       href="#">Accessories</a>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="wowy-font-smartphone"></i>
+                                            Phones
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="wowy-font-teddy-bear"></i>
+                                            Babies &amp; Moms
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        <ul class="more_slide_open" style="display: none;">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wowy-font-kite"></i>
+                                                    Sport &amp; Outdoor
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="far fa-book"></i>
+                                                    Books &amp; Office
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="far fa-car"></i>
+                                                    Cars &amp; Motorcycles
+                                                </a>
+
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wowy-font-home"></i>
+                                                    Home Improvements
+                                                </a>
+
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <div class="more_categories">Cho xem nhiều hơn...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-10 main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block main-menu-light-white hover-boder hover-boder-white">
+                    <nav>
+                        <ul class="">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li class="">
+                                <a href="#">
+                                    Sản phẩm
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="">
+                                        <a href="#">Item 1<i class="fa fa-chevron-right"></i></a>
+                                        <ul class="level-menu level-menu-modify">
+                                            <li class="">
+                                                <a href="#">
+                                                    Menu item 3
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">item 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Tin tức & sự kiện</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom header-bottom-bg-color sticky-bar gray-bg sticky-blue-bg d-blog d-lg-none">
+        <div class="container">
+            <div class="header-wrap header-space-between position-relative main-nav">
+                <div class="logo logo-width-1 d-block d-lg-none">
+                    <a href="#"><img src="max3pharma-theme/images/logo/logo_-_Hangnt_-_white.png"
+                                     alt="Wowy - Laravel Multipurpose eCommerce Script"></a>
+                </div>
+                <div class="header-action-right d-block d-lg-none">
+                    <div class="header-action-2">
+
+                        <div class="header-action-icon-2">
+                            <a class="mini-cart-icon" href="#">
+                                <img alt="cart" src="themes/wowy/images/icons/icon-cart-white.svg">
+                                <span class="pro-count white">0</span>
+                            </a>
+                            <div class="cart-dropdown-wrap cart-dropdown-hm2">
+                                <span>Không có sản phẩm nào trong giỏ.</span>
+
+                            </div>
+                        </div>
+                        <div class="header-action-icon-2">
+                            <a href="#">
+                                <img alt="wowy" src="themes/wowy/images/icons/icon-user-white.svg">
+                            </a>
+                        </div>
+                        <div class="header-action-icon-2 d-block d-lg-none">
+                            <div class="burger-icon burger-icon-white">
+                                <span class="burger-icon-top"></span>
+                                <span class="burger-icon-mid"></span>
+                                <span class="burger-icon-bottom"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mobile-header-active mobile-header-wrapper-style">
+    <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-top">
+            <div class="mobile-header-logo">
+                <a href="#"><img src="max3pharma-theme/images/logo/Timetravel 1.png"
+                                 alt="Wowy - Laravel Multipurpose eCommerce Script"></a>
+            </div>
+            <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+                <button class="close-style search-close">
+                    <i class="icon-top"></i>
+                    <i class="icon-bottom"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-header-content-area">
+            <div class="mobile-search search-style-3 mobile-header-border">
+                <form action="#" class="form--quick-search"
+                      data-ajax-url="#" method="get">
+                    <input type="text" name="q" class="input-search-product" placeholder="Tìm kiếm...">
+                    <button type="submit" title="search"><i class="far fa-search"></i></button>
+                    <div class="panel--search-result"></div>
+                </form>
+            </div>
+
+            <div class="mobile-header-info-wrap mobile-header-border">
+
+                <div class="single-mobile-header-info">
+                    <a class="mobile-language-active" href="#">Trang chủ</a>
+                </div>
+                <div class="single-mobile-header-info">
+                    <a class="mobile-language-active" href="#">Giới thiệu</a>
+                </div>
+                <div class="single-mobile-header-info">
+                    <a class="mobile-language-active" href="#">Sản phẩm <span><i
+                        class="far fa-angle-down"></i></span></a>
+                    <div class="lang-curr-dropdown lang-dropdown-active">
+                        <ul>
+                            <li><a href="#"> Hot Promotions</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Clothing</a></li>
+                            <li><a href="#">Home & Kitchen</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="single-mobile-header-info">
+                    <a href="#">Đăng nhập Đăng ký</a>
+                </div>
+
+                <div class="single-mobile-header-info">
+                    <a href="tel:1900 - 888">0869938853</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<main class="main" id="main-section">
+    <section class="home-slider position-relative">
+        <div class="position-relative">
+            <div class="hero-slider-1 style-3 dot-style-1 dot-style-1-position-1" data-autoplay="yes"
+                 data-autoplay-speed="3000">
+                <div class="single-hero-slider single-animation-wrap">
+                    <div class="container-fluid">
+                        <div class="row align-items-center slider-animated-1 ">
+                            <div class="col-12 px-0">
+                                <div class="single-slider-img single-slider-img-1">
+                                    <a href="#" class="d-block">
+                                        <img src="max3pharma-theme/images/banner/banner1.png" alt="" class="animated"
+                                             loading="eager">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-hero-slider single-animation-wrap">
+                    <div class="container-fluid">
+                        <div class="row align-items-center slider-animated-1">
+                            <div class="col-12 px-0">
+                                <div class="single-slider-img single-slider-img-1">
+                                    <a href="#" class="d-block">
+                                        <img src="max3pharma-theme/images/banner/banner-tatra-shop-7.jpg" alt=""
+                                             class="animated" loading="eager">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-hero-slider single-animation-wrap">
+                    <div class="container-fluid">
+                        <div class="row align-items-center slider-animated-1">
+                            <div class="col-12 px-0">
+                                <div class="single-slider-img single-slider-img-1">
+                                    <a href="#" class="d-block">
+                                        <img src="max3pharma-theme/images/banner/banner1.png" alt="" class="animated"
+                                             loading="eager">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-arrow hero-slider-1-arrow style-3"></div>
+        </div>
+    </section>
+    <section class="featured section-padding-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-md-3 mb-lg-0">
+                    <div class="banner-left-icon d-flex align-items-center wow fadeIn  h-100   animated">
+                        <div class="banner-icon">
+                            <img src="max3pharma-theme/images/service-offer/icon-truck.png"
+                                 alt="icon">
+                        </div>
+                        <div class="banner-text">
+                            <p class="icon-box-title">Miễn phí vẫn chuyển</p>
+                            <p>Từ 1.5 km</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-md-3 mb-lg-0">
+                    <div class="banner-left-icon d-flex align-items-center wow fadeIn  h-100   animated">
+                        <div class="banner-icon">
+                            <img src="max3pharma-theme/images/service-offer/icon-purchase.png"
+                                 alt="icon">
+                        </div>
+                        <div class="banner-text">
+                            <p class="icon-box-title">Đóng gói cẩn thận</p>
+                            <p>Được bọc kĩ càng, cẩn thận</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-md-3 mb-lg-0">
+                    <div class="banner-left-icon d-flex align-items-center wow fadeIn  h-100   animated">
+                        <div class="banner-icon">
+                            <img src="max3pharma-theme/images/service-offer/icon-bag.png"
+                                 alt="icon">
+                        </div>
+                        <div class="banner-text">
+                            <p class="icon-box-title">Hàng chính hãng </p>
+                            <p>100% nhập khẩu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-md-3 mb-lg-0">
+                    <div class="banner-left-icon d-flex align-items-center wow fadeIn  h-100   animated">
+                        <div class="banner-icon">
+                            <img src="max3pharma-theme/images/service-offer/icon-operator.png"
+                                 alt="icon">
+                        </div>
+                        <div class="banner-text">
+                            <p class="icon-box-title">Liên hệ hỗ trợ</p>
+                            <p>24/7 hàng ngày</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="" id="promotion-slider">
+        <div class="container wow fadeIn animated">
+            <div class="carousel-3-columns-cover position-relative">
+                <div class="carousel-slider-wrapper carousel-3-columns dot-style-1-position-1"
+                     id="carousel-3-columns-categories"
+                     data-slick='{"autoplay":false,"infinite":false,"autoplaySpeed":300,"speed":800}'>
+
+                    <div class=" border-radius-10 hover-up">
+                        <figure class="mb-30 img-hover-scale overflow-hidden">
+                            <a href="#"><img src="max3pharma-theme/images/promotion/Background+Border.png" alt=""/></a>
+                        </figure>
+                    </div>
+                    <div class=" border-radius-10 hover-up">
+                        <figure class="mb-30 img-hover-scale overflow-hidden">
+                            <a href="#"><img src="max3pharma-theme/images/promotion/Background+Border%20(1).png"
+                                             alt=""/></a>
+                        </figure>
+                    </div>
+                    <div class=" border-radius-10 hover-up">
+                        <figure class="mb-30 img-hover-scale overflow-hidden">
+                            <a href="#"><img src="max3pharma-theme/images/promotion/Background+Border%20(2).png"
+                                             alt=""/></a>
+                        </figure>
+                    </div>
+                    <div class=" border-radius-10 hover-up">
+                        <figure class="mb-30 img-hover-scale overflow-hidden">
+                            <a href="#"><img src="max3pharma-theme/images/promotion/Background+Border%20(2).png"
+                                             alt=""/></a>
+                        </figure>
+                    </div>
+                    <div class=" border-radius-10 hover-up">
+                        <figure class="mb-30 img-hover-scale overflow-hidden">
+                            <a href="#"><img src="max3pharma-theme/images/promotion/Background+Border.png" alt=""/></a>
+                        </figure>
+                    </div>
+                    <div class=" border-radius-10 hover-up">
+                        <figure class="mb-30 img-hover-scale overflow-hidden">
+                            <a href="#"><img src="max3pharma-theme/images/promotion/Background+Border%20(1).png"
+                                             alt=""/></a>
+                        </figure>
+                    </div>
+                    <div class=" border-radius-10 hover-up">
+                        <figure class="mb-30 img-hover-scale overflow-hidden">
+                            <a href="#"><img src="max3pharma-theme/images/promotion/Background+Border%20(2).png"
+                                             alt=""/></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flash-sale pb-30 wow fadeIn animated position-relative">
+        <div class="container">
+            <div class="tab-content wow fadeIn animated">
+                <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="product-collections-tab">
+                    <div class="row mobile-product-slider">
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #F93131;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #F93131;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #F93131;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #F93131;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flash-sale-banner position-absolute">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="max3pharma-theme/images/background/flash-sale.png" alt="">
+                <div class="flash-sale-countdown d-flex align-items-center">
+                    <span class="align-self-center">Khuyến mãi kết thúc sau:</span>
+                    <div class="d-flex align-items-center">
+                        <div class="countdown-item">01</div>
+                        <span class="mx-1">:</span>
+                        <div class="countdown-item">02</div>
+                        <span class="mx-1">:</span>
+                        <div class="countdown-item">03</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="list-product wow fadeIn animated ">
+        <div class="container">
+            <div class="tab-content wow fadeIn animated">
+                <h3 class="section-title mb-30">THỰC PHẨM CHỨC NĂNG CHO TRẺ</h3>
+                <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="product-collections-tab">
+                    <div class="row mobile-product-slider">
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color:#51B25B;"><i class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="list-product wow fadeIn animated ">
+        <div class="container">
+            <div class="tab-content wow fadeIn animated">
+                <h3 class="section-title mb-30">THỰC PHẨM CHĂM SÓC SỨC KHỎE</h3>
+                <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="product-collections-tab">
+                    <div class="row mobile-product-slider">
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(2).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(4).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(5).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032(4).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color:#51B25B;"><i class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="list-product wow fadeIn animated ">
+        <div class="container">
+            <div class="tab-content wow fadeIn animated">
+                <h3 class="section-title mb-30">THỰC PHẨM CHỨC NĂNG CHO TRẺ</h3>
+                <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="product-collections-tab">
+                    <div class="row mobile-product-slider">
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(1).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(2).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(1).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color:#51B25B;"><i class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="list-product wow fadeIn animated ">
+        <div class="container">
+            <div class="tab-content wow fadeIn animated">
+                <h3 class="section-title mb-30">THUỐC KÊ ĐƠN</h3>
+                <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="product-collections-tab">
+                    <div class="row mobile-product-slider">
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(1).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(2).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032%20(1).png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color: #51B25B;"><i
+                                            class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6">
+                            <div class="product-cart-wrap mb-30">
+                                <div class="product-img-action-wrap">
+                                    <div class="product-img product-img-zoom">
+                                        <a href="#">
+                                            <img class="default-img"
+                                                 src="max3pharma-theme/images/products/Rectangle%2032.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-action-1">
+                                        <a aria-label="Quick View" href="#"
+                                           class="action-btn hover-up js-quick-view-button" data-url="#"><i
+                                            class="far fa-eye"></i></a>
+                                        <a aria-label="Add To Wishlist" href="#"
+                                           class="action-btn hover-up js-add-to-wishlist-button" data-url="#"><i
+                                            class="far fa-heart"></i></a>
+                                        <a aria-label="Add To Compare" href="#"
+                                           class="action-btn hover-up js-add-to-compare-button" data-url="#"><i
+                                            class="far fa-exchange-alt"></i></a>
+                                    </div>
+                                    <div class="product-badges product-badges-position product-badges-mrg">
+                                        <span style="background-color:#51B25B;"><i class="fas fa-tag"></i>Giảm 5%</span>
+                                    </div>
+                                </div>
+                                <div class="product-content-wrap">
+                                    <h2 class="text-truncate mb-sm-0"><a href="#" title="Kem bôi giảm đau Ecosip">Kem
+                                        bôi giảm đau Ecosip</a></h2>
+                                    <div
+                                        class="product-price d-lg-flex flex-lg-row flex-sm-column justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <span class="old-price">590,000 đ</span>
+                                            <span>490,000 đ</span>
+                                        </div>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="align-items-lg-end product-buy-button m-lg-0 mx-auto"><i
+                                                class="fas fa-shopping-cart"></i> Mua ngay</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<section class="newsletter bg-brand p-30 text-white wow fadeIn animated">
+    <div class="container d-none d-lg-block">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-md-3 mb-lg-0">
+                <div class="row align-items-center">
+                    <div class="col flex-horizontal-center">
+                        <img class="icon-email"
+                             src="max3pharma-theme/images/icons/icon-email.svg" alt="icon">
+                        <h4 class="mb-0 ml-3">Đăng ký ngay để nhận được nhiều ưu dãi tốt nhất</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <form class="newsletter-form" method="post"
+                      action="#">
+                    <input type="hidden" autocomplete="off">
+                    <div class="form-subcriber d-flex wow fadeIn animated ">
+                        <input type="email" name="email" class="form-control bg-white font-small"
+                               placeholder="Nhập email của bạn">
+                        <button class="btn text-white" type="submit">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="main">
+    <section class="section-padding-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-3 title-footer">
+                    <h5 class="widget-title mb-30 wow fadeIn animated d-flex flex-column">CÔNG TY TNHH DU LỊCH VÀ CÔNG
+                        NGHỆ VIỆT NAM <span>Thương hiệu: MAX3PHARMA</span></h5>
+
+                    <ul class="footer-list wow fadeIn animated mb-sm-5 mb-md-0">
+                        <li>
+                            <a href="#">
+                                <span class="menu-title">Giấy phép kinh doanh số 01234567</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-title">Nơi cấp: Sở Kế hoạch và Đầu tư Tp. Hà Nội</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span
+                                    class="menu-title">Giấy phép kinh doanh Lữ hành Quốc tế số: 123456 cấp lần 2</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-3 title-footer">
+                    <h5 class="widget-title mb-30 wow fadeIn animated">THÔNG TIN LIÊN HỆ</h5>
+
+                    <ul class="footer-list wow fadeIn animated mb-sm-5 mb-md-0">
+                        <li>
+                            <a href="#">
+                                <span class="menu-title"><b class="pe-1">VPGD Hà Nội:</b>Quận Tây Hồ, Hà Nội</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-title"><b class="pe-1">Tel:</b>0869938853 <span class="ms-2">Hotlines <b>0869938853</b></span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-title"><b class="pe-1">Email</b>info@max3pharma.vn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-title"><b class="pe-1">Đia chỉ tên miền:</b>max3pharma.com</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-2 col-md-3 title-footer">
+                    <h5 class="widget-title mb-30 wow fadeIn animated">MAX3PHARMA</h5>
+
+                    <ul class="footer-list wow fadeIn animated mb-sm-5 mb-md-0">
+                        <li>
+                            <a href="#">
+                                <span class="menu-title">Tin y tế</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-title">Tin Sức khỏe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-title">Câu hỏi thường gặp</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-3 title-footer gap-1">
+                    <div>
+                        <h5 class="widget-title mb-2 wow fadeIn animated mb-">CHỨNG NHẬN</h5>
+                        <div class="d-flex align-items-center gap-lg-4 gap-0 align-items-center">
+                            <img src="max3pharma-theme/images/certification/image1.png" class="certification1" alt="">
+                            <img src="max3pharma-theme/images/certification/image%202.png" class="certification2" alt="">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5 class="widget-title mb-2 wow fadeIn animated ">CHẤP NHẬN THANH TOÁN</h5>
+                            <img src="max3pharma-theme/images/certification/payment.png" class="certification3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container pb-20 wow fadeIn animated" >
+        <div class="row">
+            <div class="col-lg-12">
+                <p class=" text-end">
+                    COPYRIGHT 2024 MAX3PHARMA. ALL RIGHT RESERVED
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Quick view -->
+<div class="modal fade custom-modal" id="quick-view-modal" tabindex="-1" aria-labelledby="quick-view-modal-label"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <div class="half-circle-spinner loading-spinner d-none">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                </div>
+                <div class="quick-view-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="themes/wowy/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="themes/wowy/js/vendor/jquery.min.js"></script>
+<script src="themes/wowy/js/vendor/jquery-migrate.min.js"></script>
+<script src="themes/wowy/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="themes/wowy/js/plugins/jquery.syotimer.min.js"></script>
+<script src="themes/wowy/js/plugins/wow.js"></script>
+<script src="themes/wowy/js/plugins/waypoints.js"></script>
+<script src="themes/wowy/js/plugins/jquery.countdown.min.js"></script>
+<script src="themes/wowy/js/plugins/jquery.vticker-min.js"></script>
+<script src="themes/wowy/js/backend.js"></script>
+<script src="themes/wowy/js/plugins/slick.js"></script>
+<script src="themes/wowy/js/main.js"></script>
+<script src="max3pharma-theme/js/custom.js"></script>
+
+<div id="scrollUp"><i class="fal fa-long-arrow-up"></i></div>
+</body>
+
+</html>
