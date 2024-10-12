@@ -25,6 +25,7 @@
     height: 441px;
 }
 .image-gallerygrid-4 img{
+    background-color: #FF6D3A;
     height: 211px;
     object-fit: cover;
     border-radius: 5px;
